@@ -20,11 +20,16 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "BABEL_ENV=production babel src -d dist --extensions \".ts,.tsx\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,8 +47,10 @@
     ]
   },
   "description": "Helper components for animating content in and out",
-  "main": "index.js",
+  "main": "dist/index.js",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
     "@storybook/addon-actions": "^5.3.13",
     "@storybook/addon-docs": "^5.3.13",
     "@storybook/addon-knobs": "^5.3.13",
