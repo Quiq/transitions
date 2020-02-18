@@ -44,7 +44,12 @@ const FadeContent = styled('div')<FadeStyleProps>`
 export const FadeInOut = ({in: inProp, duration, className, children}: VerticalSlideProps) => (
   <Transition in={inProp} timeout={duration} mountOnEnter unmountOnExit>
     {transition => (
-      <FadeContent className={className} duration={duration} transition={transition}>
+      <FadeContent
+        className={className}
+        duration={duration}
+        transition={transition}
+        data-testid="transitionContainer"
+      >
         {children}
       </FadeContent>
     )}

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`animating in 1`] = `
+.emotion-0 {
+  -webkit-animation: animation-1o5jvb1 100ms ease-in-out 0ms 1 normal both;
+  animation: animation-1o5jvb1 100ms ease-in-out 0ms 1 normal both;
+  overflow: hidden;
+}
+
+<div>
+  <div
+    class="emotion-0"
+    data-testid="transitionContainer"
+  >
+    <div>
+      Test content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`animating in 2`] = `
+<div>
+  <div
+    class="css-3vl55h"
+    data-testid="transitionContainer"
+  >
+    <div>
+      Test content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`animating out 1`] = `
+.emotion-0 {
+  -webkit-animation: animation-1ilb1g4 100ms ease-in-out 0ms 1 normal both;
+  animation: animation-1ilb1g4 100ms ease-in-out 0ms 1 normal both;
+  overflow: hidden;
+}
+
+<div>
+  <div
+    class="emotion-0"
+    data-testid="transitionContainer"
+  >
+    <div>
+      Test content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`animating out 2`] = `<div />`;

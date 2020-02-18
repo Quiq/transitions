@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`animating in 1`] = `
+.emotion-0 {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation: animation-1l26fxw 123ms 1;
+  animation: animation-1l26fxw 123ms 1;
+  overflow: hidden;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  >
+    <div>
+      Test content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`animating in 2`] = `
+<div>
+  <div
+    class="css-15n22zo"
+  >
+    <div>
+      Test content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`animating out 1`] = `
+.emotion-0 {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation: animation-1ciii1 123ms 1;
+  animation: animation-1ciii1 123ms 1;
+  overflow: hidden;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  >
+    <div>
+      Test content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`animating out 2`] = `<div />`;
