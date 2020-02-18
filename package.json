@@ -1,5 +1,5 @@
 {
-  "name": "transitions",
+  "name": "@quiq/transitions",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,5 +30,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Helper components for animating content in and out",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "natenorberg@gmail.com",
+  "license": "MIT"
 }
