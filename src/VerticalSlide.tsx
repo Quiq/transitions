@@ -57,12 +57,17 @@ const VerticalSlideContent = styled('div')<SlideStyleProps>`
     `};
 `;
 
+/**
+ * The content passed as children will be conditionally rendered based on the `in` prop.
+ * If the `in` prop goes from true to false, it will animate the component away and
+ * then unmount it after the duration amount ends
+ */
 export const VerticalSlide = ({
   in: inProp,
   maxHeight,
   duration,
   className,
-  alsoFade,
+  alsoFade = false,
   children,
 }: VerticalSlideProps) => (
   <Transition in={inProp} timeout={duration} mountOnEnter unmountOnExit>
