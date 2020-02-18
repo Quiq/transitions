@@ -39,7 +39,7 @@ interface SlideStyleProps {
   alsoFade?: boolean;
 }
 
-const VerticalSlideContent = styled.div<SlideStyleProps>`
+const VerticalSlideContent = styled('div')<SlideStyleProps>`
   ${props =>
     props.transition === 'entering' &&
     css`

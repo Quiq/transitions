@@ -25,7 +25,7 @@ interface FadeStyleProps {
   duration: number;
 }
 
-const FadeContent = styled.div<FadeStyleProps>`
+const FadeContent = styled('div')<FadeStyleProps>`
   ${props =>
     props.transition === 'entering' &&
     css`

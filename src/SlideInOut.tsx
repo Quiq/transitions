@@ -42,7 +42,7 @@ interface SlideStyleProps {
   duration: number;
 }
 
-const SlideContent = styled.div<SlideStyleProps>`
+const SlideContent = styled('div')<SlideStyleProps>`
   animation-fill-mode: forwards;
 
   ${props =>
