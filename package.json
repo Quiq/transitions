@@ -11,6 +11,7 @@
     "build": "yarn run build:types && BABEL_ENV=production babel src -d dist --extensions \".ts,.tsx\"",
     "build:types": "./node_modules/.bin/tsc --emitDeclarationOnly",
     "test": "react-scripts test",
+    "prepublish": "npm run build",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
